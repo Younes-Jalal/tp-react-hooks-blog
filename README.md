@@ -53,10 +53,13 @@ Pour chaque exercice :
 - [ ] 1.4 Documenter votre solution ici
 
 _Votre réponse pour l'exercice 1 :_
-```
-Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
-```
+- Posts
+![Posts](public/screenshots/posts.png)
+- Search
+![Posts](public/screenshots/search1.png)
+![Posts](public/screenshots/search2.png)
+
+
 
 ### Exercice 2 : Hooks Personnalisés
 #### Objectif : Créer des hooks réutilisables

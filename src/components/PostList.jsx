@@ -42,14 +42,13 @@ function PostList({
   };
   // TODO: Exercice 1 - Gérer le cas où il n'y a pas de posts
   if (posts.length === 0) {
-    return (
-      <p >
-        No posts available
-      </p>
-    );
+  return (
+    <div className="alert alert-info text-center my-4" role="alert">
+      No posts available
+    </div>
+  );
+
   }else{
-    
-  
    return (
     <div className="container my-4">
       {posts.map(post => (
