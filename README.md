@@ -56,7 +56,7 @@ _Votre réponse pour l'exercice 1 :_
 - Posts
 ![](public/screenshots/posts.png)
 - Search
-![](public/screenshots/search1.png)
+![](public/screenshots/search.png)
 ![](public/screenshots/search2.png)
 
 
