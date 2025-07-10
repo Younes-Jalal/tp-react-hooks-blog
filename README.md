@@ -54,10 +54,10 @@ Pour chaque exercice :
 
 _Votre réponse pour l'exercice 1 :_
 - Posts
-![Posts](public/screenshots/posts.png)
+![](public/screenshots/posts.png)
 - Search
-![Posts](public/screenshots/search1.png)
-![Posts](public/screenshots/search2.png)
+![](public/screenshots/search1.png)
+![](public/screenshots/search2.png)
 
 
 
