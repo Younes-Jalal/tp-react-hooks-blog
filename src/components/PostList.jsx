@@ -40,22 +40,32 @@ function PostList({
       onTagClick(tag);
     }
   };
-  
   // TODO: Exercice 1 - Gérer le cas où il n'y a pas de posts
+  if (posts.length === 0) {
+    return (
+      <p >
+        No posts available
+      </p>
+    );
+  }else{
+    
   
-  return (
-    <div className="post-list">
-      {/* TODO: Exercice 1 - Afficher la liste des posts */}
-      
-      {/* Afficher le spinner de chargement */}
-      {loading && <LoadingSpinner />}
-      
-      {/* TODO: Exercice 4 - Ajouter la référence pour le défilement infini */}
-      
-      {/* TODO: Exercice 1 - Ajouter le bouton "Charger plus" pour le mode non-infini */}
+   return (
+    <div className="container my-4">
+      {posts.map(post => (
+        <div key={post.id} className="card mb-3 shadow-sm">
+          <div className="card-body">
+            <h5 className="card-title">{post.title}</h5>
+            <p className="card-text">{post.body}</p>
+          </div>
+        </div>
+      ))}
     </div>
   );
-}
+  }}
+
+  
+  
 
 // TODO: Exercice 3 - Utiliser React.memo pour optimiser les rendus
 export default PostList;

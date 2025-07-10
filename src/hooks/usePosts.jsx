@@ -15,6 +15,7 @@ function usePosts({ searchTerm = '', tag = '', limit = 10, infinite = true } = {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
   
   // TODO: Exercice 1 - Ajouter les états nécessaires pour la pagination
   
@@ -32,7 +33,9 @@ function usePosts({ searchTerm = '', tag = '', limit = 10, infinite = true } = {
   const fetchPosts = async (reset = false) => {
     try {
       setLoading(true);
-      // Appeler l'API et mettre à jour les états
+        const response = await fetch('https://dummyjson.com/posts');
+        const data = await response.json();
+        setPosts(data.posts);
     } catch (err) {
       setError(err.message);
     } finally {
@@ -41,6 +44,9 @@ function usePosts({ searchTerm = '', tag = '', limit = 10, infinite = true } = {
   };
   
   // TODO: Exercice 1 - Utiliser useEffect pour charger les posts quand les filtres changent
+    useEffect(() => {
+    fetchPosts();
+  }, []);
   
   // TODO: Exercice 4 - Implémenter la fonction pour charger plus de posts
   

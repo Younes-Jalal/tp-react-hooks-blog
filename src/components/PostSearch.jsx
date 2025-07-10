@@ -46,6 +46,10 @@ function PostSearch({
               aria-label="Rechercher"
             />
             {/* TODO: Exercice 1 - Ajouter le bouton pour effacer la recherche */}
+            <button  class="btn btn-outline-secondary btn-sm">
+  Clear Search
+</button>
+
           </div>
         </div>
         
