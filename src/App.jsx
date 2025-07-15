@@ -7,6 +7,7 @@ import usePosts from "./hooks/usePosts"
 // TODO: Exercice 3 - Importer ThemeProvider et useTheme
 // TODO: Exercice 1 - Importer le hook usePosts
 // TODO: Exercice 2 - Importer le hook useLocalStorage
+import useLocalStorage from './useLocalStorage';
 
 function App() {
   // État local pour la recherche
@@ -15,10 +16,11 @@ function App() {
   
   // TODO: Exercice 1 - Utiliser le hook usePosts pour récupérer les posts
   // Exemple: const { posts, loading, error } = usePosts();
-   const { posts, loading, error } = usePosts();
+   const { posts, loading, error } = usePosts({searchTerm});
 
-  
   // TODO: Exercice 2 - Utiliser useLocalStorage pour le mode de défilement
+  const [scrollMode, setScrollMode] = useLocalStorage('scrollMode', true);
+
   
   // TODO: Exercice 3 - Utiliser useCallback pour les gestionnaires d'événements
   
@@ -50,8 +52,7 @@ function App() {
         {/* TODO: Exercice 4 - Ajouter le composant PostDetails */}
         
         {/* TODO: Exercice 1 - Passer les props nécessaires à PostList */}
-
-         <PostList posts={posts.filter(post=> post.title.includes(searchTerm) || post.body.includes(searchTerm))}/>
+         <PostList posts={posts}/>
               </main>
       
       <footer className="pt-3 mt-4 text-center border-top">
