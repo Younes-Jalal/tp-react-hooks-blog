@@ -62,7 +62,6 @@ _Votre réponse pour l'exercice 1 :_
 
 
 ### Exercice 2 : Hooks Personnalisés
-![](public/screenshots/search3.png)
 
 #### Objectif : Créer des hooks réutilisables
 
@@ -72,10 +71,8 @@ _Votre réponse pour l'exercice 1 :_
 - [ ] 2.4 Documenter votre solution ici
 
 _Votre réponse pour l'exercice 2 :_
-```
-Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
-```
+![](public/screenshots/search3.png)
+
 
 ### Exercice 3 : Optimisation et Context
 #### Objectif : Gérer le thème global et optimiser les rendus
