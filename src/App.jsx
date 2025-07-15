@@ -7,7 +7,7 @@ import usePosts from "./hooks/usePosts"
 // TODO: Exercice 3 - Importer ThemeProvider et useTheme
 // TODO: Exercice 1 - Importer le hook usePosts
 // TODO: Exercice 2 - Importer le hook useLocalStorage
-import useLocalStorage from './useLocalStorage';
+import useLocalStorage from './hooks/useLocalStorage';
 
 function App() {
   // État local pour la recherche
