@@ -62,6 +62,8 @@ _Votre réponse pour l'exercice 1 :_
 
 
 ### Exercice 2 : Hooks Personnalisés
+![](public/screenshots/search3.png)
+
 #### Objectif : Créer des hooks réutilisables
 
 - [ ] 2.1 Créer le hook `useDebounce` pour optimiser la recherche
